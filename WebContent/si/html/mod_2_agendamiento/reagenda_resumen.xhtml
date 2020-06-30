@@ -18,7 +18,7 @@
 			<!-- Columna de Breadcrum -->
 			<div class="borde col">
 				<ul class="breadcrumb col-lg-10">
-					<li><a href="../mod_1_usuarios/client_home.html">Home</a></li>
+					<li><a jsf:outcome="test/test.xhtml">Home</a></li>
 					<li><a jsf:outcome="test/test.xhtml">Modificación de Cita</a></li>
 					<li><a jsf:outcome="test/test.xhtml">Seleccionar Servicio</a></li>
 					<li><a jsf:outcome="test/test.xhtml">Seleccionar Barbero</a></li>
@@ -37,43 +37,45 @@
 				</ul>
 			</div>
 		</header>
-		<div class="row">
-			<div class="col">
-				<h1>Resumen de tu Nueva Cita</h1>
+		<h:form>
+			<div class="row">
+				<div class="col">
+					<h1>Resumen de tu cita</h1>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="servicios-col">
-				<h3>Resumen de Servicios</h3>
-				<p>Corte: $30.000 COP</p>
+			<div class="row">
+				<div class="servicios-col">
+					<h3>Resumen de Servicios</h3>
+					<p>Corte: $30.000 COP</p>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="barbero-col col-lg-5">
-				<h3>Barbero</h3>
-				<p>Camilo Ramírez</p>
-				<h:graphicImage value="../../../resources/css/img/Servicios/barbero_1.png"/>
+			<div class="row">
+				<div class="barbero-col col-lg-6">
+					<h3>Barbero</h3>
+					<p>Camilo Ramírez</p>
+					<h:graphicImage value="../../../resources/css/img/Servicios/barbero_1.png"/>
+				</div>
 			</div>
-			<div class="productos-col col-lg-5">
-				<h3>Resumen de Productos</h3>
-				<h:graphicImage value="../../../resources/css/img/Productos/productos.PNG"/>
-				<p>Champú: $20.000 COP</p>
+			<div class="row">
+				<div class="productos-col col-lg-6">
+					<h3>Resumen de Productos</h3>
+					<h:graphicImage value="../../../resources/css/img/Productos/productos.PNG"/>
+					<p>Champú: $20.000 COP</p>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-		</div>
-		<div class="row">
-			<div class="datos-col">
-				<h3>Información</h3>
-				<p>Fecha y Hora: Martes 10 de Diciembre de 2019 a las 14:00</p>
-				<p>Total: $50.000</p>
+			<div class="row">
+				<div class="datos-col">
+					<h3>Información</h3>
+					<p>Fecha y Hora: Martes 10 de Diciembre de 2019 a las 14:00</p>
+					<p>Total: $50.000</p>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<a class="abuttonb" jsf:outcome="test/test.xhtml">Reagendar</a>
+			<div class="row">
+				<div class="col">
+					<h:commandButton action="#{TblUsuario.metodoVuelveLanding}" value="Reagendar" styleClass="btn"></h:commandButton>
+				</div>
 			</div>
-		</div>
+		</h:form>
 		<footer class="footer row">
 			<div class="col">
 				<h:graphicImage value="../../../resources/css/img/Logo/Barbgend_logo.png"/>

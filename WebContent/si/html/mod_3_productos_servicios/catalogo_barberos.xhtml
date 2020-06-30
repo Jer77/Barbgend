@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:jsf="http://xmlns.jcp.org/jsf">
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
 	<meta charset="UTF-8"></meta>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
@@ -12,7 +13,7 @@
 	<link rel="stylesheet" jsf:name="bootstrap/css/bootstrap.min.css"></link>
  	<link rel="shortcut icon" jsf:name="resources/css/img/Favicon/favicon.ico" type="image/x-icon"></link>
 </h:head>
-<body>
+<h:body>
 	<div class="content">
 		<header class="row">
 			<!-- Columna de Breadcrum -->
@@ -39,12 +40,16 @@
 		</div>
 		<div class="row">
 			<div class="inputform col">
-				<form>
-					<select>
-						<option value="">Barbero</option>
-						<option value="barbero_1">Camilo Ramírez</option>
-					</select>
-				</form>
+				<h:form>
+					<div class="col_int">
+						<h:outputLabel value="Barberos" />
+					</div>
+					<h:selectOneMenu value="#{TblUsuario.metodoCrearUsuario}">
+						<f:selectItem itemValue="barbero1" itemLabel="" />
+						<f:selectItem itemValue="barbero2" itemLabel="" />
+						<f:selectItem itemValue="barbero3" itemLabel="" />
+					</h:selectOneMenu>
+				</h:form>
 			</div>
 		</div>
 		<div class="row">
@@ -65,7 +70,7 @@
 		</div>
 		<div>
 			<div class="review col col-lg-3">
-				<p>Servicio simplemente excepcional, desde su atención, hasta los implementos usados,lo mejor es que no te hace sentir como un cliente más, sino como un conocido de toda la vida. Recomendado al 100%.</p>
+				<p>Servicio simplemente excepcional, desde su atención, hasta los implementos usados, lo mejor es que no te hace sentir como un cliente más, sino como un conocido de toda la vida. Recomendado al 100%.</p>
 			</div>
 		</div>
 		<div class="row">
@@ -80,8 +85,5 @@
 			</div>
 		</footer>
 	</div>
-	<script src="../../../css/bootstrap/js/jquery-3.4.1.min.js"></script>
-	<script src="../../../css/bootstrap/js/popper.min.js"></script>
-	<script src="../../../css/bootstrap/js/bootstrap.min.js"></script>
-</body>
+</h:body>
 </html>

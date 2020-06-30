@@ -143,26 +143,22 @@ input{
 }
 
 /*Links-Botones temporal*/
-.abutton{
-	text-align: center;
-	display: inline-block;
+.btn{
+	margin: 10px;
 	font-family: 'Nirmala UI', 'Malgun Gothic', sans-serif;
-	width: 90px;
-	height: 40px;
-	padding: 5px;
-	background: #D5B387;
-	text-decoration: none;
-	color: #594C3B;
-	border-radius: 10px;
-	font-size: 13pt;
-	margin-top: 10px;
+	font-size: 12pt !important;
+	background: #D5B387 !important;
+	border-color: #594C3B !important;
+	color: #594C3B !important;
+	border-radius: 10px !important;
 }
 
-.abutton:hover {
-	color: #D9D2C5;
-	font-size: 13pt;
+.btn:hover {
+	margin: 10px;
+	color: #D9D2C5 !important;
+	font-size: 12pt;
 	text-decoration: none;
-	background-color: #736A5F;
+	background-color: #736A5F !important;
 }
 
 /*Títulos*/

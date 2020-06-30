@@ -12,7 +12,7 @@
 	<link rel="stylesheet" jsf:name="bootstrap/css/bootstrap.min.css"></link>
  	<link rel="shortcut icon" jsf:name="resources/css/img/Favicon/favicon.ico" type="image/x-icon"></link>
 </h:head>
-<body>
+<h:body>
 	<div class="content">
 		<header class="row">
 			<!-- Columna de Breadcrum -->
@@ -59,7 +59,7 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<a class="abutton" href="../mod_1_usuarios/client_home.html">Home</a>
+				<h:commandButton action="#{TblUsuario.metodoVuelveLanding}" value="Home" styleClass="btn"></h:commandButton>
 			</div>
 		</div>
 		<footer class="footer row">
@@ -72,5 +72,5 @@
 	<script src="../../../css/bootstrap/js/jquery-3.4.1.min.js"></script>
 	<script src="../../../css/bootstrap/js/popper.min.js"></script>
 	<script src="../../../css/bootstrap/js/bootstrap.min.js"></script>
-</body>
+</h:body>
 </html>

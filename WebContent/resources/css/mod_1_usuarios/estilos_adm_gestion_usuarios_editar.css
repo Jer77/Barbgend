@@ -197,24 +197,40 @@ select{
 }
 
 /*Links-Botones*/
-.abutton{
-	text-align: center;
-	display: inline-block;
-	font-family: 'Nirmala UI', 'Malgun Gothic', sans-serif;
-	padding: 9px;
-	background: #D5B387;
-	text-decoration: none;
-	color: #594C3B;
-	border-radius: 10px;
-	font-size: 11pt;
+.btn{
 	margin: 10px;
+	font-family: 'Nirmala UI', 'Malgun Gothic', sans-serif;
+	font-size: 12pt !important;
+	background: #D5B387 !important;
+	border-color: #594C3B !important;
+	color: #594C3B !important;
+	border-radius: 10px !important;
 }
 
-.abutton:hover {
-	color: #D9D2C5;
-	font-size: 11pt;
+.btn:hover {
+	margin: 10px;
+	color: #D9D2C5 !important;
+	font-size: 12pt;
 	text-decoration: none;
-	background-color: #736A5F;
+	background-color: #736A5F !important;
+}
+
+.form-control-sm{
+	margin: 5px;
+	border-radius: 5px !important;
+	border-color: #594C3B !important;
+	text-align:center;
+	font-family: 'Nirmala UI', 'Malgun Gothic', sans-serif !important;
+}
+
+.form-control-sm:focus, .form-control:focus {
+  	border-color: #594C3B;
+  	box-shadow: 0 0 0 0.2rem rgba(89, 76, 59, 0.50) !important;
+}
+
+select:focus{
+	border-color: #594C3B;
+  	box-shadow: 0 0 0 0.2rem rgba(89, 76, 59, 0.50) !important;
 }
 
 @media screen and (max-width:1000px){

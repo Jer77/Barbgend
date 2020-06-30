@@ -12,7 +12,7 @@
 	<link rel="stylesheet" jsf:name="bootstrap/css/bootstrap.min.css"></link>
  	<link rel="shortcut icon" jsf:name="resources/css/img/Favicon/favicon.ico" type="image/x-icon"></link>
 </h:head>
-<body>
+<h:body>
 	<div class="content">
 		<header class="row">
 			<!-- Columna de Breadcrum -->
@@ -43,37 +43,37 @@
 				<h:graphicImage value="../../../resources/css/img/Servicios/agendamiento-corte.jpg"/>
 				<p>Se crea un efecto de "desvanecimiento" donde el cabello inicia corto en la parte inferior de la cabeza y va creciendo a medida que asciende sin notarse líneas o sombras. Obtén un aspecto moderno y conquista con este tipo de cortes.
 				No olvides dar tu toque personal a cada corte que te realices, nuestros Barberos están abiertos a opiniones y nuevas ideas.</p>
-				<a class="abutton" href="">Editar Servicio</a>
-				<a class="abutton" href="">Eliminar Servicio</a>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Editar Servicio" styleClass="btn"></h:commandButton>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Eliminar Servicio" styleClass="btn"></h:commandButton>
 			</div>
 			<div class="servicio col">
 				<h3>Barba</h3>
 				<h:graphicImage value="../../../resources/css/img/Servicios/servicio-barba.jpg"/>
 				<p>Vive la experiencia del arreglo de barba más suave que solo el vapor y el ozono pueden brindar. Acompañado de todo un ritual de barbería clásica que incluye exfoliación, masaje facial, tratamiento para las ojeras y nivelación de la altura de la barba con su respectivo delineado. Finalizando con aplicación de productos para después de afeitado y aceites hidratantes. Toda una experiencia tipo Spa.</p>
-				<a class="abutton" href="">Editar Servicio</a>
-				<a class="abutton" href="">Eliminar Servicio</a>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Editar Servicio" styleClass="btn"></h:commandButton>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Eliminar Servicio" styleClass="btn"></h:commandButton>
 			</div>
 			<div class="servicio col">
 				<h3>Mascarillas</h3>
 				<h:graphicImage value="../../../resources/css/img/Servicios/servicio-mask.jpg"/>
 				<p>Que mejor que complementar tu corte de cabello y arreglo de barba que nuestras mascarillas para la cara de última generación diseñadas especialmente para nosotros y nuestros sistemas novedosos de depilación.  los detalles son los que hacen la diferencia por eso cuidamos mucho de ellos.
 				Contrario a lo que ellas podrían pensar No todos los hombres somos iguales, nosotros lo entendemos y sabemos que cada uno tiene diferentes necesidades.</p>
-				<a class="abutton" href="">Editar Servicio</a>
-				<a class="abutton" href="">Eliminar Servicio</a>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Editar Servicio" styleClass="btn"></h:commandButton>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Eliminar Servicio" styleClass="btn"></h:commandButton>
 			</div>
 			<div class="servicio col">
 				<h3>Corte para Niños</h3>
 				<h:graphicImage value="../../../resources/css/img/Servicios/servicio-kids.jpg"/>
 				<p>En Celebrity Barber Shop los niños son especialmente bienvenidos, nuestra calidez y paciencia son los mejores complementos a los estilos que a los chiquitines les encantan y los colegios requieren. Pregunta por nuestro catalogo de peluqueria para los niños. Todos nuestros procesos son aptos para todas las edades, no olvides reclamar tu #GlobitoCelebrity si eres toda una minicelebridad.</p>
-				<a class="abutton" href="">Editar Servicio</a>
-				<a class="abutton" href="">Eliminar Servicio</a>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Editar Servicio" styleClass="btn"></h:commandButton>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Eliminar Servicio" styleClass="btn"></h:commandButton>
 			</div>
 		</div>
 		<div class="row">
 		</div>
 		<div class="row">
 			<div class="col">
-				<a class="abutton" href="">Agregar Servicio</a>
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Agregar Servicio" styleClass="btn"></h:commandButton>
 			</div>
 		</div>
 		<footer class="footer row">
@@ -83,8 +83,5 @@
 			</div>
 		</footer>
 	</div>
-	<script src="../../../css/bootstrap/js/jquery-3.4.1.min.js"></script>
-	<script src="../../../css/bootstrap/js/popper.min.js"></script>
-	<script src="../../../css/bootstrap/js/bootstrap.min.js"></script>
-</body>
+</h:body>
 </html>

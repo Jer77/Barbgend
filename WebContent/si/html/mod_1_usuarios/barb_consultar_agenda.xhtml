@@ -2,14 +2,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:jsf="http://xmlns.jcp.org/jsf"
-      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
 <h:head>
     <meta charset="UTF-8"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
-    <title>Agendamiento</title>
+    <title>Barbero Consultar Agenda</title>
     <h:outputStylesheet name="css/jsfcrud.css"></h:outputStylesheet>
-    <link rel="stylesheet" jsf:name="css/mod_2_agendamiento/estilos_reagenda_sel_fecha.css"></link>
+    <link rel="stylesheet" jsf:name="css/mod_1_usuarios/estilos_barb_consultar_agenda.css"></link>
     <link rel="stylesheet" jsf:name="bootstrap/css/bootstrap.min.css"></link>
     <link rel="shortcut icon" jsf:name="resources/css/img/Favicon/favicon.ico" type="image/x-icon"></link>
 </h:head>
@@ -20,35 +19,35 @@
 			<div class="borde col col-lg-9">
 				<ul class="breadcrumb">
 					<li><a jsf:outcome="test/test.xhtml">Home</a></li>
-					<li><a jsf:outcome="test/test.xhtml">Modificación de Cita</a></li>
-					<li><a jsf:outcome="test/test.xhtml">Seleccionar Servicio</a></li>
-					<li><a jsf:outcome="test/test.xhtml">Seleccionar Barbero</a></li>
-					<li><a jsf:outcome="test/test.xhtml">Seleccionar Producto</a></li>
-					<li><a jsf:outcome="test/test.xhtml">Seleccionar Fecha</a></li>
+					<li><a jsf:outcome="test/test.xhtml">Consultar Agenda</a></li>
 				</ul>
 			</div>
 			<!-- Columna área de notificación -->
 			<div class="borde col col-lg-3">
 				<ul class="notification">
 					<li><h:graphicImage value="../../../resources/css/img/Elements/list.jpg"/></li>
- 					<li><h:graphicImage value="../../../resources/css/img/Elements/notificacion.png"/></li>
- 					<li><h:graphicImage value="../../../resources/css/img/Elements/mensaje.png"/></li>
-					<li>Cliente</li>
+						<li><h:graphicImage value="../../../resources/css/img/Elements/notificacion.png"/></li>
+						<li><h:graphicImage value="../../../resources/css/img/Elements/mensaje.png"/></li>
+					<li>Barbero</li>
 				</ul>
 			</div>
 		</header>
 		<div class="row">
 			<div class="col">
-				<h1>Seleccionar Fecha</h1>
+				<!-- Título -->
+				<h1>Consultar Agenda</h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
+				<!-- Calendario -->
 				<div class="calendar">
+					<!-- Contenedor de Imagen y título del calendario -->
 					<div class="calendar_picture">
 						<h2>Martes, 10</h2>
 						<h3>Diciembre</h3>
 					</div>
+					<!-- Divs de información de días del calendario -->
 					<div class="calendar_date">
 						<div class="calendar_day">L</div>
 						<div class="calendar_day">M</div>
@@ -98,16 +97,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="row" align="center">
-			<div class="inputform col">
-				<h:form>
-					<h:inputText id="primerNombre" value="#{TblUsuario.usuPrimerNombre}" a:placeholder="Selecciona La Hora" styleClass="form-control form-control-sm"/>
-				</h:form>
-			</div>
-		</div>
 		<div class="row">
 			<div class="col">
-				<h:commandButton actionListener="#{TblUsuario.metodoVuelveLanding}" value="Reagenda Esta Cita" styleClass="btn"></h:commandButton>
+				<!-- Botón para consultar agenda -->
+				<h:commandButton actionListener="#{TblUsuario.metodoCrearUsuario}" value="Consultar" styleClass="btn"></h:commandButton>
 			</div>
 		</div>
 		<footer class="footer row">
